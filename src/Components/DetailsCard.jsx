@@ -19,7 +19,8 @@ function DetailsCard({product}) {
     }
 
     let prod = product[0]
-    let actualPrice; 
+    let actualPrice;
+    //Checking Price 
     (prod.price) && (actualPrice = (prod.price + (prod.price * prod.discountPercentage/100)).toFixed(2));
   return (
     <div className='productdetailscard'>
